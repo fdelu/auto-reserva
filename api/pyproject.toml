@@ -1,0 +1,15 @@
+[tool.black]
+line-length = 100
+preview = true
+
+[tool.mypy]
+exclude = ['__pycache__', '\.git', '\.mypy_cache', '\.venv', 'function_app.py']
+mypy_path = 'src'
+check_untyped_defs = true
+python_version = '3.12'
+disallow_untyped_defs = true
+disallow_any_generics = true
+implicit_reexport = false
+namespace_packages = true
+explicit_package_bases = true
+plugins = ['pydantic.mypy']
