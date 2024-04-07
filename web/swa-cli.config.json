@@ -3,8 +3,7 @@
         "app": {
             "run": "npm run dev -- --strictPort --port 5173",
             "appDevserverUrl": "http://localhost:5173",
-            "apiLocation": "../api",
-            "verbose": "silly"
+            "apiLocation": "../api"
         }
     }
 }
