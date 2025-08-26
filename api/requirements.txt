@@ -4,4 +4,10 @@
 
 azure-functions
 
-fastapi~=0.110.1
+fastapi
+httpx
+beautifulsoup4
+pydantic
+pydantic-extra-types
+tzdata
+pyjwt

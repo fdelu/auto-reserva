@@ -1,0 +1,4 @@
+pyright
+ruff
+
+types-PyJWT
