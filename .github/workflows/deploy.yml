@@ -22,5 +22,5 @@ jobs:
           action: "upload"
           app_location: web
           api_location: api
-          output_location: web/dist
+          output_location: dist
 
