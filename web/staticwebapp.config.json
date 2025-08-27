@@ -4,5 +4,10 @@
     },
     "platform": {
         "apiRuntime": "python:3.11"
-    }
+    },
+    "routes": [
+        {
+            "route": "/api/*"
+        }
+    ]
 }
