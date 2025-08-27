@@ -3,6 +3,6 @@
         "rewrite": "/index.html"
     },
     "platform": {
-        "apiRuntime": "python:3.12"
+        "apiRuntime": "python:3.11"
     }
 }

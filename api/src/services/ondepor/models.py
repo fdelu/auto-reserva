@@ -1,4 +1,4 @@
-from typing import Annotated, Any
+from typing import Annotated, Any, TypeVar, Generic
 from datetime import time
 
 from pydantic import (
@@ -15,7 +15,10 @@ from pydantic.alias_generators import to_camel
 from pydantic_extra_types.timezone_name import TimeZoneName
 
 
-class OndeporResponse[T](BaseModel):
+T = TypeVar("T")
+
+
+class OndeporResponse(BaseModel, Generic[T]):
     status: str
     status_code: int | None = None
     data: Annotated[T, Field(validation_alias=AliasChoices("data", "model"))]
