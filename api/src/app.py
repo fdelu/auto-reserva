@@ -12,5 +12,5 @@ async def app_lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(lifespan=app_lifespan, title="Auto reservation API")
+app = FastAPI(lifespan=app_lifespan, title="Auto reservation API", root_path="/api")
 app.include_router(router)
